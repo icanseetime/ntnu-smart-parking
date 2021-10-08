@@ -5,5 +5,10 @@
   "repository": "https://github.com/icanseetime/ntnu-smart-parking.git",
   "author": "Group 9",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "scripts": {
+    "backend-start": "cd backend && npm run dev",
+    "backend-install": "cd backend && npm install",
+    "full-install": "npm install && npm run backend-install"
+  }
 }

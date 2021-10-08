@@ -1,3 +1,8 @@
+## General
+yarn.lock
+
 ## Backend
 
 /backend/node_modules
+/backend/.env
+/backend/yarn.lock
