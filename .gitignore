@@ -1,5 +1,6 @@
 ## General
 yarn.lock
+node_modules
 
 ## Backend
 
