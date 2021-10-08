@@ -1,0 +1,9 @@
+{
+  "name": "ntnu-smart-parking",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/icanseetime/ntnu-smart-parking.git",
+  "author": "Group 9",
+  "license": "MIT",
+  "private": true
+}
