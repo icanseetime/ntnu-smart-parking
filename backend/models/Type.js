@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const Area = mongoose.Schema({
+const Type = mongoose.Schema({
 	Name: {
 		type: String,
 		required: true
@@ -8,4 +8,4 @@ const Area = mongoose.Schema({
 })
 
 // Export
-module.exports = mongoose.model('Area', Area)
+module.exports = mongoose.model('Type', Type)
