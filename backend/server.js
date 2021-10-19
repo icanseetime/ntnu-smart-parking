@@ -9,6 +9,7 @@ const mongoose = require('mongoose')
 // Routers
 const apiRouter = require('./routes')
 const parkingSpotRouter = require('./routes/parking-spots')
+const parkingAreaRouter = require('./routes/parking-areas')
 const parkingTypeRouter = require('./routes/parking-types')
 
 // Middleware
@@ -29,6 +30,7 @@ db.on('open', () => console.log('✅ Connected to database'))
 // Endpoints
 app.use('/api', apiRouter)
 app.use('/api/parking-spots', parkingSpotRouter)
+app.use('/api/parking-areas', parkingAreaRouter)
 app.use('/api/parking-types', parkingTypeRouter)
 
 // Error handling

@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const ParkingSpot = mongoose.Schema({
 	area: {
 		type: mongoose.Schema.Types.ObjectId,
-		ref: 'Area',
+		ref: 'ParkingArea',
 		required: true
 	},
 	type: {
@@ -15,7 +15,7 @@ const ParkingSpot = mongoose.Schema({
 		type: Boolean,
 		required: true
 	}
-})
+}, { collection: 'parking-spots' })
 
 // Export
 module.exports = mongoose.model('ParkingSpot', ParkingSpot)
