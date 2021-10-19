@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const ParkingSpot = mongoose.Schema({
 	area: {
 		type: mongoose.Schema.Types.ObjectId,
-		ref: 'Area',
+		ref: 'ParkingArea',
 		required: true
 	},
 	type: {
