@@ -15,7 +15,7 @@ const ParkingSpot = mongoose.Schema({
 		type: Boolean,
 		required: true
 	}
-})
+}, { collection: 'parking-spots' })
 
 // Export
 module.exports = mongoose.model('ParkingSpot', ParkingSpot)

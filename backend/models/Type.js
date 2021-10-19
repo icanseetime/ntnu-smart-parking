@@ -5,7 +5,7 @@ const Type = mongoose.Schema({
 		type: String,
 		required: true
 	}
-})
+}, { collection: 'parking-types' })
 
 // Export
 module.exports = mongoose.model('Type', Type)
