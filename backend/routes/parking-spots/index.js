@@ -7,3 +7,4 @@ const routes = require('./routes')
 router.get('/', routes.listParkingSpots)
 
 module.exports = router
+
