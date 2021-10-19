@@ -9,6 +9,7 @@ const mongoose = require('mongoose')
 // Routers
 const apiRouter = require('./routes')
 const parkingSpotRouter = require('./routes/parking-spots')
+const parkingAreaRouter = require('./routes/parking-areas')
 
 // Middleware
 app.use(express.json())
@@ -28,6 +29,7 @@ db.on('open', () => console.log('✅ Connected to database'))
 // Endpoints
 app.use('/api', apiRouter)
 app.use('/api/parking-spots', parkingSpotRouter)
+app.use('/api/parking-areas', parkingAreaRouter)
 
 // Error handling
 app.use((err, req, res, next) => {
