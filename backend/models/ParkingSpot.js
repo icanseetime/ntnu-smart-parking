@@ -8,7 +8,7 @@ const ParkingSpot = mongoose.Schema({
 	},
 	type: {
 		type: mongoose.Schema.Types.ObjectId,
-		ref: 'Type',
+		ref: 'ParkingType',
 		required: true
 	},
 	availability: {
