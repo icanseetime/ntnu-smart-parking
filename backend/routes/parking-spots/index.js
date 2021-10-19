@@ -6,4 +6,7 @@ const routes = require('./routes')
 // GET: Get all parking spots
 router.get('/', routes.listParkingSpots)
 
+// POST: Create new parking spot
+router.post('/', routes.createParkingSpot)
+
 module.exports = router
