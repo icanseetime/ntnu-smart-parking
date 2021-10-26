@@ -5,7 +5,7 @@ const ParkingSpot = require('../../models/ParkingSpot')
 const listParkingSpots = async (req, res) => {
 	try {
 		// List all parking spots
-		const list = await ParkingSpot.find(req.query)
+		const list = await ParkingSpot.find(req.query).populate('area type')
 		if (!list) {
 			res.status(404).json({
 				error: `Couldn't find any parking spots in the database.`
