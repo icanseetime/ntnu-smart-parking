@@ -10,6 +10,11 @@
     "backend-start": "cd backend && npm run dev",
     "backend-install": "cd backend && npm install",
     "frontend-start": "cd frontend && npm run start",
-    "full-install": "npm install && npm run backend-install"
+    "frontend-install": "cd frontend && npm install",
+    "full-install": "npm install && npm run backend-install && npm run frontend-install",
+    "full-start": "concurrently -n 'backend,frontend' -c 'yellow,blue' \"yarn backend-start\" \"yarn frontend-start\""
+  },
+  "devDependencies": {
+    "concurrently": "^6.3.0"
   }
 }
