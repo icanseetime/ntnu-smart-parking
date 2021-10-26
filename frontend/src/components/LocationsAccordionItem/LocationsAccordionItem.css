@@ -1,0 +1,26 @@
+.LocationsAccordionItem {
+    background-color: var(--secondary-background-color);
+    margin: 0;
+}
+
+/* * Header */
+.LocationsAccordionItem .ItemHeader {
+    background-color: var(--ntnu-color);
+    color: var(--secondary-text-color);
+    padding: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+
+
+/* * Content */
+.LocationsAccordionItem .ItemContent {
+    padding: 20px;
+    box-sizing: content-box;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
