@@ -5,7 +5,7 @@ const router = express.Router()
 // Test route
 router.get('/', (req, res) => {
 	res.status(200).json({
-		message: `Congratulations! 🎉🥳`
+		message: `You have successfully reached the NTNU Smart Parking API.`
 	})
 })
 
